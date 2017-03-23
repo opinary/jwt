@@ -7,3 +7,8 @@
 
 Implementation of [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519)
 in Go.
+
+
+See [examples section in
+GoDoc](https://godoc.org/github.com/opinary/jwt#pkg-examples) to learn how to
+use it.
