@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+
+    working_directory: /go/src/github.com/opinary/jwt
+
+    steps:
+      - checkout
+
+      - run:
+          name: Go version
+          command: go version
+
+      - run:
+          name: Test
+          command: |
+            go test -v -race ./...
